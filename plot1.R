@@ -10,4 +10,6 @@ Feb[,3]=as.numeric(as.character(Feb[,3]))
 #generates the histogram with the required additions
 png("plot1.png")
 hist(Feb$Global_active_power,xlab="Global Active Power (kilowatts)",main="Global Active Power",col="red1")
+yticks<-seq(200,1200,200)
+axis(2,at=yticks,labels=c("200","400","600","800","1000","1200"))
 dev.off()
